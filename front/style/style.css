@@ -1,5 +1,6 @@
 body{
     background-color: #FEFAE0;
+    text-align: center;
 }
 
 .login {
@@ -16,7 +17,7 @@ body{
 }
 
 footer{
-    background-color: #84d8e9;
+    background-color: #FEFAE0;
     text-align: center;
     padding: 10px;
     text-decoration: none;

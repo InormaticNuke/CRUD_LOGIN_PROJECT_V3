@@ -1,9 +1,23 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['rut'])) {
+    header('Location: logscreen.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home • Intranet</title>
+    <link rel="stylesheet" href="style\style.css">
+    <link rel="icon" href="front\img\" type="image/x-icon">
+
 </head>
 <body>
 

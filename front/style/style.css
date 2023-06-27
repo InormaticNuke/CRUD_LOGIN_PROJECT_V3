@@ -1,0 +1,23 @@
+body{
+    background-color: #FEFAE0;
+}
+
+.login {
+    margin: 0 auto;
+	margin-bottom: 20px;
+	border: 6px  #CCD5AE;
+    border-radius: 10px;
+	padding: 10px;
+	width: calc(30% - 20px);
+	box-sizing: border-box;
+    text-align: center;
+    background-color: #CCD5AE;
+    box-shadow: 0 3px 5px #414141;
+}
+
+footer{
+    background-color: #84d8e9;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}

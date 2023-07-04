@@ -2,13 +2,13 @@
 session_start();
 
 if (!isset($_SESSION['rut'])) {
-    header('Location: index.php');
+    header('Location: logscreen.php');
     exit();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_destroy();
-    header('Location: index.php');
+    header('Location: logscreen.php');
     exit();
 }
 ?>
@@ -26,12 +26,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-    <h1>Bienvenido, <?php echo $_SESSION['nombre']; ?></h1>
+    <h1>Bienvenido, <?php echo $_SESSION['rut']; ?></h1>
     
 </body>
 
 <footer>
-      <p>&copy; InfomaticNuke</p>
+
+    <form action="" method="post">
+        <button type="submit">Logout</button>
+    </form>
+
+    <br><br>
+
+    <p>&copy; InfomaticNuke</p>
       <p>
         <a href="https://www.instagram.com/informaticnuke/" target="_blank">Instagram | </a>
         <a href="https://twitter.com/InformaticNuke" target="_blank">Twitter | </a>

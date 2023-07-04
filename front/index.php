@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home • Intranet</title>
+    <title>Home • QPromotor</title>
     <link rel="stylesheet" href="style\style.css">
     <link rel="icon" href="front\img\" type="image/x-icon">
 

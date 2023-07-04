@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login • Intranet</title>
+    <title>Login • QPromotor</title>
     <link rel="stylesheet" href="style\style.css">
     <link rel="icon" href="front\img\" type="image/x-icon">
 
@@ -13,7 +13,7 @@
 <body>
     <div class="login">
 
-        <form action="index.php" method="post">
+        <form action="Bcknd\auth.php" method="post">
             <label for="Rut">RUT</label>
             <br>
             <input type="text" name="rut" placeholder="ID">
@@ -22,7 +22,7 @@
             <br>
             <input type="password" name="clave" placeholder="Password">
             <br><br><br>
-            <button type="submit" class="input-button-boton">Login</button>
+            <button type="submit">Login</button>
         </form>
 
     </div>

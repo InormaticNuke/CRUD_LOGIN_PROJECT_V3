@@ -16,13 +16,13 @@ Class Autenticar{
         $conexion = new Conexion();
         $conexion->Conecta();
         
-        $consulta = "SELECT * FROM usuario WHERE rut = '$this->rut' AND clave = '$this->clave'";
+        $consulta = "SELECT * FROM Usuario WHERE Rut = '$this->rut' AND clave = '$this->clave'";
         
         $resultado = $conexion->Ejecuta($consulta);
 
         if ($resultado->num_rows == 1) {
            
-            $_SESSION["rut"] = $this->rut;
+            $_SESSION["Rut"] = $this->rut;
             header('Location: index.php');
         } else {
             header('Location: logscreen.php');

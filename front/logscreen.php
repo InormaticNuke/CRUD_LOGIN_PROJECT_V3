@@ -13,7 +13,7 @@
 <body>
     <div class="login">
 
-        <form action="login.php" method="post">
+        <form action="index.php" method="post">
             <label for="Rut">RUT</label>
             <br>
             <input type="text" name="rut" placeholder="ID">

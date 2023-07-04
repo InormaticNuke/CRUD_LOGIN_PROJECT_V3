@@ -5,7 +5,6 @@ if (!isset($_SESSION['rut'])) {
     header('Location: logscreen.php');
     exit();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +20,7 @@ if (!isset($_SESSION['rut'])) {
 </head>
 <body>
 
-    <h1>Bienvndo usuario</h1>
+    <h1>Bienvenido, <?php echo $_SESSION['rut']; ?></h1>
     
 </body>
 

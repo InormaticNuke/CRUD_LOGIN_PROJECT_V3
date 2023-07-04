@@ -18,7 +18,7 @@ CREATE TABLE Perfil (
     
 INSERT INTO `usuario` (`Rut`, `Nombres`, `apellido1`, `apellido2`, `direccion`, `fono`, `clave`) VALUES ('20.907.416-8', 'Manuel', 'Rengifo', 'Taffe', 'Av Providencia 2640', 91786048,'nuke');
 
-INSERT INTO `usuario` (`Rut`, `Nombres`, `apellido1`, `apellido2`, `direccion`, `fono`, `clave`) VALUES ('69.420.42-9', 'Cosme', 'Fulanito', 'Fulanito', 'SpringField', 11069335,'incognito');
+INSERT INTO `usuario` (`Rut`, `Nombres`, `apellido1`, `apellido2`, `direccion`, `fono`, `clave`) VALUES ('69.420.420-9', 'Cosme', 'Fulanito', 'Fulanito', 'SpringField', 11069335,'incognito');
 
 INSERT INTO `perfil` (`ID`, `UserType`, `Rut`) VALUES(10,'Admin','20.907.416-8');
 INSERT INTO `perfil` (`ID`, `UserType`, `Rut`) VALUES(69,'Normal','69.420.42-9');

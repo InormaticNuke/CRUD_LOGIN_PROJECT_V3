@@ -13,16 +13,16 @@
 <body>
     <div class="login">
 
-        <form action="Bcknd/log.php" method="post">
-            <label for="Rut">Rut</label>
+        <form action="login.php" method="post">
+            <label for="Rut">RUT</label>
             <br>
-            <input type="text" name="rut">
-            <br><br> 
+            <input type="text" name="rut" placeholder="ID">
+            <br><br>
             <label for="Rut">Password</label>
             <br>
-            <input type="password" name="pass">
-            <br><br><br><br>
-            <input type="submit" value="Login">
+            <input type="password" name="clave" placeholder="Password">
+            <br><br><br>
+            <button type="submit" class="input-button-boton">Login</button>
         </form>
 
     </div>

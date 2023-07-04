@@ -2,7 +2,13 @@
 session_start();
 
 if (!isset($_SESSION['rut'])) {
-    header('Location: logscreen.php');
+    header('Location: index.php');
+    exit();
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    session_destroy();
+    header('Location: index.php');
     exit();
 }
 ?>
@@ -20,7 +26,7 @@ if (!isset($_SESSION['rut'])) {
 </head>
 <body>
 
-    <h1>Bienvenido, <?php echo $_SESSION['rut']; ?></h1>
+    <h1>Bienvenido, <?php echo $_SESSION['nombre']; ?></h1>
     
 </body>
 

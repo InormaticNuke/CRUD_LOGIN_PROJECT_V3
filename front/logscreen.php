@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login • QPromotor</title>
-    <link rel="stylesheet" href="style\style.css">
-    <link rel="icon" href="front\img\" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="front/img/" type="image/x-icon">
 
 </head>
 
 <body>
     <div class="login">
 
-        <form action="Bcknd\auth.php" method="post">
+        <form action="/Bcknd/log.php" method="post">
             <label for="Rut">RUT</label>
             <br>
             <input type="text" name="rut" placeholder="ID">

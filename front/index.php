@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['rut'])) {
-    header('Location: logscreen.php');
+if (!isset($_SESSION['Rut'])) {
+    header('Location: /Front/logscreen.php');
     exit();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_destroy();
-    header('Location: logscreen.php');
+    header('Location: /Front/logscreen.php');
     exit();
 }
 ?>
@@ -20,8 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home • QPromotor</title>
-    <link rel="stylesheet" href="style\style.css">
-    <link rel="icon" href="front\img\" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="front/img/" type="image/x-icon">
 
 </head>
 <body>

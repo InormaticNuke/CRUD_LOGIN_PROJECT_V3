@@ -1,5 +1,5 @@
-
 <?php
+/*
 session_start();
 
 if (!isset($_SESSION['rut'])) {
@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: logscreen.php');
     exit();
 }
+*/
 ?>
 
 
@@ -22,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD • QPromotor</title>
-    <link rel="stylesheet" href="style\style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
@@ -55,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "</table>";
 
                 } else {
-                    echo "No se encontraron registros en la tabla Usuario.";
+                    echo "ERROR: NO DATA FOUND";
                 }
         ?>
         </div>

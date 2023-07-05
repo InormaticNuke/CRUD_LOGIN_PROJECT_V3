@@ -23,9 +23,9 @@ Class Autenticar{
         if ($resultado->num_rows == 1) {
            
             $_SESSION["Rut"] = $this->rut;
-            header('Location: index.php');
+            header('Location: /Front/index.php');
         } else {
-            header('Location: logscreen.php');
+            header('Location: /Front/logscreen.php');
         }
 
     }

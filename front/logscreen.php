@@ -13,7 +13,7 @@
 <body>
     <div class="login">
 
-        <form action="/Bcknd/log.php" method="post">
+        <form action="log.php" method="post">
             <label for="Rut">RUT</label>
             <br>
             <input type="text" name="rut" placeholder="ID">

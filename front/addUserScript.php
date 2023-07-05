@@ -1,5 +1,5 @@
 <?php
-require_once "/Bcknd/cnx.php";
+require_once "cnx.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conexion = new Conexion();

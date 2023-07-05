@@ -19,13 +19,15 @@ Class Autenticar{
         $consulta = "SELECT * FROM Usuario WHERE Rut = '$this->rut' AND clave = '$this->clave'";
         
         $resultado = $conexion->Ejecuta($consulta);
+        
+        
 
         if ($resultado->num_rows == 1) {
            
-            $_SESSION["Rut"] = $this->rut;
-            header('Location: /Front/index.php');
+            $_SESSION["rut"] = $this->rut;
+            header('Location: index.php');
         } else {
-            header('Location: /Front/logscreen.php');
+            header('Location: logscreen.php');
         }
 
     }

@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['Rut'])) {
-    header('Location: /Front/logscreen.php');
+if (!isset($_SESSION['rut'])) {
+    header('Location: logscreen.php');
     exit();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_destroy();
-    header('Location: /Front/logscreen.php');
+    header('Location: logscreen.php');
     exit();
 }
 ?>
@@ -27,6 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
     <h1>Bienvenido, <?php echo $_SESSION['rut']; ?></h1>
+
+    <a href="CRUD.php">CRUD</a>
     
 </body>
 

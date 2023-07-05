@@ -1,5 +1,5 @@
 <?php
-/*
+
 session_start();
 
 if (!isset($_SESSION['rut'])) {
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: logscreen.php');
     exit();
 }
-*/
+
 ?>
 
 
@@ -29,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <h1>CRUD Mostrar data</h1>
 
-    <div>
+    <div class="crud">
         <?php
-        require_once "Bcknd/cnx.php";
+        require_once "cnx.php";
         $conexion = new Conexion();
         $conexion->Conecta();
 
@@ -59,7 +59,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "ERROR: NO DATA FOUND";
                 }
         ?>
-        </div>
+    </div>
+
+        <a href="userAdd.php">ADD USER</a>
+        <br>
+        <a href="deleteUser.php">DELETE USER</a>
+        <br>
+        <a href="index.php">BACK</a>
     
 </body>
 </html>

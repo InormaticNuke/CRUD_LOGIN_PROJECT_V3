@@ -1,5 +1,5 @@
 body{
-    background-color: #FEFAE0;
+    background-color: #CCD5AE;
     text-align: center;
 }
 
@@ -16,8 +16,13 @@ body{
     box-shadow: 0 3px 5px #414141;
 }
 
+.crud{
+    background-color: #CCD5AE;
+    text-align: center;   
+}
+
 footer{
-    background-color: #FEFAE0;
+    background-color: #CCD5AE;
     text-align: center;
     padding: 10px;
     text-decoration: none;

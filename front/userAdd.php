@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['rut'])) {
+    header('Location: logscreen.php');
+    exit();
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    session_destroy();
+    header('Location: logscreen.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +22,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add User • QPromotor</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
-    <form action="/Bcknd/addUserScript.php" method="post">
+    <form action="addUserScript.php" method="post">
         <label for="rut">Rut:</label>
         <input type="text" id="Rut" name="Rut" required><br><br>
         
@@ -32,6 +50,9 @@
         
         <input type="submit" value="Submit">
     </form>
+
+    <br>
+    <a href="CRUD.php">BACK</a>
     
 </body>
 </html>
